@@ -1,9 +1,9 @@
 name: Deploy to GCP
 
 env:
-  SERVICE_NAME: cicd_example
+  SERVICE_NAME: cicd-example
   PROJECT_ID: training-projects-430617
-  DOCKER_IMAGE_URL: us-central1-docker.pkg.dev/training-projects-430617/cicd_example
+  DOCKER_IMAGE_URL: us-central1-docker.pkg.dev/training-projects-430617/cicd-example
 
 on:
   push:
@@ -23,7 +23,6 @@ jobs:
 
       - name: Google Cloud Auth
         uses: 'google-github-actions/auth@v2'
-
         with:
           credentials_json: '${{ secrets.GCP_EXAMPLE }}' 
           project_id: ${{ env.PROJECT_ID }}
