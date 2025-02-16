@@ -3,7 +3,7 @@ name: Deploy to GCP
 env:
   SERVICE_NAME: cicd_example
   PROJECT_ID: training-projects-430617
-  DOCKER_IMAGE_URL: us-centrall-docker.pkg-dev/training-projects-430617/cicd_example
+  DOCKER_IMAGE_URL: us-central1-docker.pkg-dev/training-projects-430617/cicd_example
 
 on:
   push:
