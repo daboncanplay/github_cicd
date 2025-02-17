@@ -7,7 +7,7 @@ RUN chown sampleuser:sampleuser /home
 
 USER sampleuser
 
-COPY . /home
+COPY ./src /home
 RUN pip install -r /home/requirements.txt
 
 CMD python3 /home/run.py
