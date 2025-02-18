@@ -17,7 +17,7 @@ app = Flask(__name__)
 @app.route('/predict', methods= ['POST'])
 def predict():
     model_response = model.generate_content(contents=request.get_json()['prompt'])
-    return model_response.candidates[0].content.parts[0].text
+    return f"{model_response.candidates[0].content.parts[0].text} Dave"
 
 if __name__ == "__main__":
     app.run(port=8080, host='0.0.0.0', debug=True)
