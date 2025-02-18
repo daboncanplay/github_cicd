@@ -10,4 +10,4 @@ USER sampleuser
 COPY . /home
 RUN pip install -r /home/requirements.txt
 
-CMD ["python3", "/home/src/run.py"]
+CMD ["python3", "/home/src/app.py"]
