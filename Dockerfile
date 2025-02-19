@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.13.1
 
 RUN groupadd -g 1000 sampleuser && useradd -r -u 1000 -g sampleuser sampleuser
 
