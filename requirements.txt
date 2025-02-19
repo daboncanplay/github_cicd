@@ -1,2 +1,5 @@
 Flask
 google-cloud-aiplatform
+"instructor[google-vertexai]"
+fastapi
+uvicorn
