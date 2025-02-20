@@ -47,10 +47,5 @@ jobs:
           --platform managed \
           --region us-central1 \
           --allow-unauthenticated
-      - name: Install dependencies
-        run: pip install pytest pytest-md pytest-emoji
-      - uses: pavelzw/pytest-action@v2
-        with:
-          emoji: false
-          verbose: false
-          job-summary: true
+      - name: Run integratin test
+        run: python tests/integration.py
