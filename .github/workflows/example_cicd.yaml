@@ -51,7 +51,7 @@ jobs:
       - name: Run integration tests
         run: python tests/integration.py
 
-      - name: Deploy to staging
+      - name: Deploy to production
         run: |
           gcloud run deploy $PRODUCTION_SERVICE_NAME \
           --image ${{ env.DOCKER_IMAGE_URL }}:latest \
