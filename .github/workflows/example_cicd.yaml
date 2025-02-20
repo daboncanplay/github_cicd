@@ -47,3 +47,7 @@ jobs:
           --platform managed \
           --region us-central1 \
           --allow-unauthenticated
+      # - name: Install dependencies
+      #   run: sudo pip3 install google-api-python-client oauth2client
+      - name: Integration tests
+        run: pytest
