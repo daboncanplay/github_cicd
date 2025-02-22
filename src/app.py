@@ -1,5 +1,4 @@
 import instructor # type: ignore
-from flask import Flask, request
 from fastapi import FastAPI
 import vertexai 
 import asyncio
